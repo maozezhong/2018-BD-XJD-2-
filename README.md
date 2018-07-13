@@ -7,7 +7,7 @@
     - [faster-rcnn pytorch版本](https://github.com/jwyang/faster-rcnn.pytorch)
     - [dcn](https://github.com/msracver/Deformable-ConvNets)
     - [retinanet keras版本](https://github.com/fizyr/keras-retinanet)
-    fpn等
+    - fpn等
 - 最后还是tow-stage的faster-rcnn正确度高(至少在我的实验中是这样,当然时间有限,设备有限单卡1080,实验结论不完备)
 - 数据处理方面 : 使用了针对检测的数据增强,包括旋转,平移,加噪,改亮度,具体实现见DataAugmentForObejctDetection.py这个脚本
 - trick方面 : 1)softnms, 2)模型融合(具体见merge_box中的脚本)
@@ -24,7 +24,7 @@
 - resnext.py : pytorch, 基于resnext backbone的faster rcnn模型结构, 参考[ResNeXt-PyTorch/resnext.py](https://github.com/miraclewkf/ResNeXt-PyTorch/blob/master/resnext.py), 其实就是在resnet的基础上加了多通道并行.
 - nms.py : 常规nms,以及softnms
 
-## q群交流涨姿势
+## 学习姿势
 - faster**多尺度训练,多尺度预测**,**tesnsorlayer数据增强**,结果ensemble可以到89
 - 基于fpn的faster-rcnn
 - detectron单模型可以到89
@@ -37,8 +37,8 @@
 - ssd上89!!!但是没说用了啥技巧....
 
 ## 所有代码链接
-- [baiduyun(part1:models)]()
-- [baiduyun(part2:data)]()
+- [baiduyun(part1:models部分)](https://pan.baidu.com/s/1BaXyPzJkpRCMlsC2saDnnA)
+- [baiduyun(part2:data)](https://pan.baidu.com/s/1k9E_KsEtz5f0lbzX_2OjBg)
 
 ## to do list
 - [ ] 使用detectron
