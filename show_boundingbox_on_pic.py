@@ -16,8 +16,9 @@ def showPicResult(image, coords, name_set):
         name = name_set[i]
         cv2.rectangle(img,(int(x1),int(y1)),(int(x2),int(y2)),(0,255,0),3) 
         cv2.putText(img,name,(int(x1),int(y1+20)),cv2.FONT_HERSHEY_COMPLEX,1,(0,0,255),2)
-    cv2.namedWindow("image_detector", 1)
+    cv2.namedWindow("image_detector", 1)    #1表示原图
     cv2.moveWindow("image_detector",0,0)
+    cv2.resizeWindow("image_detector", 256,192) #可视化的图片大小
     cv2.imshow('image_detector', img)  
     cv2.waitKey(0)    #表示等待500ms，0表示一直等待直到按键
     cv2.destroyAllWindows()  
