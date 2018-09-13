@@ -41,8 +41,8 @@
 - [baiduyun(part2:data)](https://pan.baidu.com/s/1k9E_KsEtz5f0lbzX_2OjBg)
 
 ## to do list
-- [ ] 使用detectron
-- [ ] [transfer to coco data](https://blog.csdn.net/qq_15969343/article/details/80848175)
+- [x] 使用detectron
+- [X] [transfer to coco data](https://blog.csdn.net/qq_15969343/article/details/80848175)
 - [ ] test aug
 - [ ] 数据增强,[sampleParing and mixup](https://kexue.fm/)
 
